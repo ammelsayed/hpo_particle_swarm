@@ -1,0 +1,61 @@
+{
+  "package": "mealpy",
+  "package_version": "3.0.3",
+  "algorithm": "PSO.OriginalPSO (Kennedy & Eberhart 1995)",
+  "xgboost_version": "3.4.1",
+  "device": "cuda",
+  "data": {
+    "generator": "sklearn.datasets.make_classification",
+    "n_samples": 20000,
+    "n_features": 60,
+    "n_informative": 40,
+    "test_size": 0.2,
+    "random_seed": 42
+  },
+  "pso": {
+    "epoch": 15,
+    "pop_size": 12,
+    "c1": 2.05,
+    "c2": 2.05,
+    "w": 0.4,
+    "evaluations": 192
+  },
+  "search_space": {
+    "learning_rate": {
+      "lb": 0.01,
+      "ub": 0.3
+    },
+    "max_depth": {
+      "lb": 2.0,
+      "ub": 10.0
+    },
+    "subsample": {
+      "lb": 0.5,
+      "ub": 1.0
+    },
+    "colsample_bytree": {
+      "lb": 0.5,
+      "ub": 1.0
+    },
+    "min_child_weight": {
+      "lb": 1.0,
+      "ub": 10.0
+    },
+    "reg_lambda": {
+      "lb": 0.1,
+      "ub": 10.0
+    }
+  },
+  "best_params": {
+    "learning_rate": 0.1601069445991402,
+    "max_depth": 9,
+    "subsample": 0.721802874108065,
+    "colsample_bytree": 0.9931685425400073,
+    "min_child_weight": 4.509867851866945,
+    "reg_lambda": 3.429118445463303,
+    "n_estimators": 200.0
+  },
+  "best_auc_during_search": 0.9881177381177382,
+  "best_auc_retrain": 0.9881177381177382,
+  "runtime_seconds": 780.13
+}
