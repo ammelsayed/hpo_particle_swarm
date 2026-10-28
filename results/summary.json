@@ -1,0 +1,59 @@
+{
+  "best_by_auc": {
+    "method": "pyswarms",
+    "strategy": "B_early_stopping",
+    "test_auc": 0.986835907877522,
+    "test_asimov_z": 134.64235571376759
+  },
+  "best_by_asimov": {
+    "method": "baseline",
+    "strategy": "B_early_stopping",
+    "test_auc": 0.9866745185403293,
+    "test_asimov_z": 135.11100435041322
+  },
+  "per_method_A_vs_B": {
+    "optuna": {
+      "A_test_auc": 0.9863983511065308,
+      "B_test_auc": 0.9867346298184162,
+      "A_test_asimov_z": 134.59080384849176,
+      "B_test_asimov_z": 134.4507054331198,
+      "winner_by_auc": "B_early_stopping",
+      "winner_by_asimov": "A_optimize_n_estimators"
+    },
+    "mealpy": {
+      "A_test_auc": 0.9860325723127009,
+      "B_test_auc": 0.9865787960522114,
+      "A_test_asimov_z": 133.91951640424747,
+      "B_test_asimov_z": 134.21263184018989,
+      "winner_by_auc": "B_early_stopping",
+      "winner_by_asimov": "B_early_stopping"
+    },
+    "pyswarms": {
+      "A_test_auc": 0.9857923494231928,
+      "B_test_auc": 0.986835907877522,
+      "A_test_asimov_z": 133.1983298551461,
+      "B_test_asimov_z": 134.64235571376759,
+      "winner_by_auc": "B_early_stopping",
+      "winner_by_asimov": "B_early_stopping"
+    },
+    "baseline": {
+      "A_test_auc": 0.9833672871313531,
+      "B_test_auc": 0.9866745185403293,
+      "A_test_asimov_z": 130.31059447433094,
+      "B_test_asimov_z": 135.11100435041322,
+      "winner_by_auc": "B_early_stopping",
+      "winner_by_asimov": "B_early_stopping"
+    }
+  },
+  "device": "cuda",
+  "figures": [
+    "figures/bdt_scores_baseline.png",
+    "figures/bdt_scores_optuna.png",
+    "figures/bdt_scores_mealpy.png",
+    "figures/bdt_scores_pyswarms.png",
+    "figures/bdt_scores_overview_B.png",
+    "figures/compare_auc.png",
+    "figures/compare_asimov.png",
+    "figures/compare_gains.png"
+  ]
+}

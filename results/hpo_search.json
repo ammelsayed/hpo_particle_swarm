@@ -1,0 +1,133 @@
+[
+  {
+    "method": "baseline",
+    "strategy": "A_optimize_n_estimators",
+    "core_params": {
+      "learning_rate": 0.3,
+      "max_depth": 6,
+      "subsample": 1.0,
+      "colsample_bytree": 1.0,
+      "min_child_weight": 1.0,
+      "reg_lambda": 1.0
+    },
+    "n_estimators": 100,
+    "best_val_auc": 0.9863781288281356,
+    "runtime_seconds": 1.293261625804007,
+    "note": "fixed default n_estimators=100, no search"
+  },
+  {
+    "method": "baseline",
+    "strategy": "B_early_stopping",
+    "core_params": {
+      "learning_rate": 0.3,
+      "max_depth": 6,
+      "subsample": 1.0,
+      "colsample_bytree": 1.0,
+      "min_child_weight": 1.0,
+      "reg_lambda": 1.0
+    },
+    "n_estimators": 560,
+    "best_val_auc": 0.9890827474520762,
+    "runtime_seconds": 8.072106349281967
+  },
+  {
+    "method": "optuna",
+    "strategy": "A_optimize_n_estimators",
+    "core_params": {
+      "learning_rate": 0.1859493890731242,
+      "max_depth": 10,
+      "subsample": 0.7001191075439765,
+      "colsample_bytree": 0.8527345591760804,
+      "min_child_weight": 9.23882858157994,
+      "reg_lambda": 2.5698095164124637
+    },
+    "n_estimators": 319,
+    "best_val_auc": 0.9897449715138097,
+    "runtime_seconds": 161.83174940943718,
+    "n_trials": 40
+  },
+  {
+    "method": "mealpy",
+    "strategy": "A_optimize_n_estimators",
+    "core_params": {
+      "learning_rate": 0.2265022200666555,
+      "max_depth": 8,
+      "subsample": 0.9141272836119104,
+      "colsample_bytree": 0.7776924786220121,
+      "min_child_weight": 6.636430052893477,
+      "reg_lambda": 3.670920062550172
+    },
+    "n_estimators": 421,
+    "best_val_auc": 0.9896744713179759,
+    "runtime_seconds": 414.9266949556768,
+    "epoch": 10,
+    "pop_size": 8
+  },
+  {
+    "method": "pyswarms",
+    "strategy": "A_optimize_n_estimators",
+    "core_params": {
+      "learning_rate": 0.23305435934083682,
+      "max_depth": 9,
+      "subsample": 0.6934585261823545,
+      "colsample_bytree": 0.5826685193992414,
+      "min_child_weight": 6.613495980959202,
+      "reg_lambda": 9.70912758827745
+    },
+    "n_estimators": 417,
+    "best_val_auc": 0.9894628596190543,
+    "runtime_seconds": 302.6364136058837,
+    "iters": 10,
+    "n_particles": 8
+  },
+  {
+    "method": "optuna",
+    "strategy": "B_early_stopping",
+    "core_params": {
+      "learning_rate": 0.039006775219579626,
+      "max_depth": 8,
+      "subsample": 0.8933386178545989,
+      "colsample_bytree": 0.6795804683538899,
+      "min_child_weight": 1.3573456031996494,
+      "reg_lambda": 1.0867355009563435
+    },
+    "n_estimators": 1630,
+    "best_val_auc": 0.9899522498673607,
+    "runtime_seconds": 890.0636531775817,
+    "n_trials": 40
+  },
+  {
+    "method": "mealpy",
+    "strategy": "B_early_stopping",
+    "core_params": {
+      "learning_rate": 0.07828003121751617,
+      "max_depth": 5,
+      "subsample": 0.637150525478886,
+      "colsample_bytree": 0.7897189219334071,
+      "min_child_weight": 2.189306828163328,
+      "reg_lambda": 4.193264694484113
+    },
+    "n_estimators": 1102,
+    "best_val_auc": 0.990161194892208,
+    "runtime_seconds": 1054.1806711489335,
+    "epoch": 10,
+    "pop_size": 8
+  },
+  {
+    "method": "pyswarms",
+    "strategy": "B_early_stopping",
+    "core_params": {
+      "learning_rate": 0.19681590511392424,
+      "max_depth": 8,
+      "subsample": 0.5247455028276682,
+      "colsample_bytree": 0.7626239486037012,
+      "min_child_weight": 3.667607273390927,
+      "reg_lambda": 2.4391561326778093
+    },
+    "n_estimators": 382,
+    "best_val_auc": 0.9900141389281637,
+    "runtime_seconds": 777.1289745420218,
+    "iters": 10,
+    "n_particles": 8
+  }
+]
